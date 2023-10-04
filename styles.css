@@ -1,0 +1,259 @@
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+
+section{
+    display: flex;
+    border: 2px solid gray
+   
+}
+
+p{
+    padding-left: 2vw;
+    padding-top: 3vw;
+    padding-right: 17vw;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+h2,h3{
+   
+    padding-left: 10px;
+    padding-top: 40px;
+    box-sizing: border-box;
+    margin: 0%;
+    background-color: lightgray;
+    min-height: auto;
+    
+}
+h1{
+    border: none;
+    display: flex;
+    margin: 0%;
+    background-color: #36474F;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+   
+}
+  .word {
+        float: left;
+        color: white;
+        width: 90%;
+        box-sizing: content-box;
+    
+  }
+   .wordComputer {
+        float: left;
+        color: white;
+        width: 90%;
+        box-sizing: content-box;
+
+   }
+
+  .word:before {
+      color: #FE6E3F;
+      content: "Textbooks";
+  }
+   .wordComputer:before {
+       color: #FE6E3F;
+       content: "Computing  ";
+   }
+
+  .navbarimg{
+    border: #36474F;
+    padding-bottom: 7px;
+    margin: auto;
+    flex: wrap;
+    width: 10%;
+    box-sizing: border-box;
+  }
+
+  ul{
+    padding-top: 3vw;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: lightgray;
+        
+  }
+
+  li{
+   color: #90191A;
+  }
+
+  .content{
+    display: flex;
+    flex-flow: row wrap;
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    border: none;
+  }
+
+  @media (max-width: 550px) {
+
+      .content,
+      .left {
+          float: none;
+          display: block;
+          width: 100%;
+      }
+  }
+
+  @media (min-width: 500px) {
+
+      .content,
+      .left {
+          float: left;
+          display: inline-block;
+          
+      }
+
+      .content {
+          box-sizing: border-box;
+          
+      }
+
+      .left {
+          
+      }
+      .ulist{
+      color: #696969;
+        
+      }
+  }
+
+  .listText{
+    color: #90191A;
+  }
+
+  .hoverText{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        display: none;/* <----- hides text by default */
+  }
+
+.listText:hover + .hoverText{
+        display: block;
+        padding-bottom: 5%;
+        border: none;
+}
+
+.textbookimgs{ /*figure container*/
+
+    
+    float: left;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1%;
+    width: 23%;
+   
+}
+
+figcaption{/*figure caption*/
+    padding: 5%;
+    box-sizing: border-box;
+    background-color: white;
+    font-size: larger;
+    height: 150px;
+  
+}
+
+.textimgs{ /* actual imag sizes*/
+   width: 100%;
+
+    
+}
+
+.textbookimgs:hover .textimgs{
+    filter: brightness(80%);
+}
+
+.imgHover{ /* button styling */
+   
+        background-color: orange;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: none;
+        font-size: 18px;
+        margin: 4px 2px;
+        border-radius: 3px;
+        cursor: pointer;
+
+}
+.textbookimgs:hover .imgHover{
+    display: flex;
+}
+
+  
+ 
+   @media (max-width: 770px) {
+
+       .textbookimgs {
+                width: 45%;
+       }
+   }
+
+        @media (max-width: 480px) {
+    
+            .textbookimgs {
+                width: 95%;
+            }
+        }
+
+        @media (max-width: 518px) { /*resize header when small*/
+
+            h1{
+                font-size: small;
+            }
+            .navbarimg{
+                padding: 0%;
+                margin: 0%;
+                height: 55.5px;
+            }
+        }
+
+   /* Basic styles for the image container */
+   .image-container {
+       display: flex;
+       flex-flow: row wrap;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       float: left;
+   }
+
+   /* Styles for individual images */
+   .image-container img {
+       /* Initially, two images in a row */
+       margin-bottom: 10px;
+   }
+
+   /* Media query for smaller screens */
+   @media (max-width: 768px) {
+       .image-container img {
+           
+           /* One image in a row for smaller screens */
+       }
+   }
+
+   a{
+    color: #90191A;
+    font-size: large;
+    text-decoration: none;
+   }
